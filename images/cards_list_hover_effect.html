@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        .body {
+            box-sizing: border-box;
+        }
+
+        .card_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 300px;
+        }
+
+        .card1 {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            margin-left: 25px;
+            transition: linear .5s;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            position: relative;
+        }
+
+        .card1:hover {
+            transform: scale(1.2, 1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card_container">
+        <div class="card1">
+            <img src="https://picsum.photos/200" alt="">
+
+        </div>
+        <div class="card1">
+            <img src="https://picsum.photos/200" alt="">
+
+        </div>
+        <div class="card1">
+            <img src="https://picsum.photos/200" alt="">
+
+        </div>
+        <div class="card1">
+            <img src="https://picsum.photos/200" alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>
