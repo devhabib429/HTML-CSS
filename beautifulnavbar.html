@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_nav {
+            height: 100px;
+            background-color: Indigo;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .nav_left {
+            margin-left: 20px;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 4px;
+            font-weight: bold;
+        }
+
+        .nav_right {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            color: white;
+            font-weight: normal;
+            letter-spacing: 1px;
+            margin-right: 20px;
+        }
+
+        .nav_item {
+            margin-left: 15px;
+        }
+
+        .nav_border {
+            height: 10px;
+            width: 20px;
+            background-color: transparent;
+            margin-top: 3px;
+            transition: width .5s;
+        }
+
+        .nav_border:hover {
+            height: 5px;
+            width: 60px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_nav">
+        <div class="nav_left">
+            <div class="nav_logo">NextDrio</div>
+        </div>
+        <div class="nav_right">
+            <div class="nav_item">
+                <div class="nav_item_content">Services</div>
+                <div class="nav_border"></div>
+            </div>
+            <div class="nav_item">
+                <div class="nav_item_content">Resources</div>
+                <div class="nav_border"></div>
+            </div>
+            <div class="nav_item">
+                <div class="nav_item_content">Community</div>
+                <div class="nav_border"></div>
+            </div>
+            <div class="nav_item">
+                <div class="nav_item_content">SingIn</div>
+                <div class="nav_border"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
