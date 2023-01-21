@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn_main {
+            margin-top: 300px;
+        }
+
+        .b1 {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 15px;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            border: 5px solid red;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            animation: btnn 2s linear infinite;
+        }
+
+        @keyframes btnn {
+            0% {
+                border-color: white yellow blue pink;
+            }
+
+            25% {
+                border-color: blue pink white red;
+            }
+
+            50% {
+                border-color: green yellow blue pink;
+            }
+
+            100% {
+                border-color: orange blue yellow darkorchid;
+            }
+        }
+
+        .b:hover {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn_main">
+        <div class="btn">
+            <button class="b1">Click Me</button>
+        </div>
+    </div>
+</body>
+
+</html>
