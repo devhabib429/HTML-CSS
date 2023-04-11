@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_logo {
+    height: 200px;
+    width: 200px;
+    background-color: #2962ff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 55deg;
+    margin-top: 300px;
+    transition: 3s linear;
+}
+
+.main_logo:hover {
+    transform: scale(2, 2);
+    transform: rotate(360deg);
+}
+
+.circle_logo {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
