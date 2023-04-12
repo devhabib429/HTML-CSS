@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card-box {
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            height: 350px;
+            width: 300px;
+            background-color: transparent;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+        }
+
+        .card-image {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+        }
+
+        .card-image img {
+            transition: .5s;
+        }
+
+        .card-image img:hover {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            transform: scale(1.5, 1.5);
+            /* transform: translateY(-5px); */
+
+        }
+
+        .card-title {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .card-desc {
+            margin: 13px 20px 0 20px;
+            font-size: 13px;
+            word-spacing: 8px;
+        }
+
+        .card-action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card-action .expiry {
+            background-color: transparent;
+            margin-right: 15px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .card-action .dob {
+            background-color: transparent;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .card-btn {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 10px 30px 10px 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .clip {
+            margin-top: -30px;
+            margin-left: -30px;
+            clip-path: circle(50% at 50% 50%);
+            height: 100px;
+            width: 100px;
+            background-color: rgb(199, 235, 249);
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+
+<body>
+    <div class="card-box">
+        <div class="card">
+            <div class="card-image">
+                <div class="clip"></div>
+                <img src="/images/profile.png" alt="" width="100">
+            </div>
+            <div class="card-title">
+                <h3>Habibur Rahman</h3>
+            </div>
+            <div class="card-desc">Driving Continuous Delivery and Automation for Agile Development and Operations</div>
+            <div class="card-action">
+                <div class="expiry">Expiry : 20 June,2030</div>
+                <dob class="dob">DOB : 04 Jan,1997</dob>
+            </div>
+            <div class="card-btn">
+                <button class="btn">Check Profile</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

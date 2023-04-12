@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .twitter {
+            position: relative;
+            height: 200vh;
+            background-image: linear-gradient(#8360c3, #2ebf91);
+        }
+
+        .tweet {
+            position: absolute;
+            animation: flying 3s ease-in-out 3s infinite;
+
+        }
+
+        @keyframes flying {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                top: 0;
+                left: 200px;
+            }
+
+            75% {
+                top: 200px;
+                left: 200px;
+            }
+
+            100% {
+                top: 200px;
+                left: 0;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="twitter">
+            <img class="tweet" src="images/twitt.png" width="60" height="60" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
